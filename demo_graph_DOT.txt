@@ -1,0 +1,15 @@
+digraph G{
+"age" [shape=ellipse];
+"sex" [shape=ellipse];
+"diabetes" [shape=ellipse];
+"hosp_admission_count" [shape=ellipse];
+"time_to_death" [shape=ellipse];
+"age" -> "diabetes";
+"age" -> "hosp_admission_count";
+"age" -> "time_to_death";
+"sex" -> "diabetes";
+"sex" -> "hosp_admission_count";
+"diabetes" -> "hosp_admission_count";
+"diabetes" -> "time_to_death";
+"hosp_admission_count" -> "time_to_death";
+}
